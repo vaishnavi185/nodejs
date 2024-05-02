@@ -41,20 +41,21 @@
 //   res.end('<b>Hello World!</b>'+'hello');
 // }).listen(8080);
 
-var http = require('http');
-var fs = require('fs');
+// var http = require('http');
+// var fs = require('fs');
 
-http.createServer(function(req, res) {
-    fs.readFile('txt.html', function(err, data) {
+// http.createServer(function(req, res) {
+//     fs.readFile('txt.html', function(err, data) {
        
-            res.writeHead(200, {'Content-Type': 'text/html'});
+//             res.writeHead(200, {'Content-Type': 'text/html'});
             
         
         
-        res.write(data);
-        return res.end();
-    });
-}).listen(6000);
+//         res.write(data);
+//         return res.end();
+//     });
+// }).listen(6000);
+
 
 
   
