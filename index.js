@@ -31,7 +31,7 @@
 // }
 
 //
-const arr = [1.2,-6,8];
+// const arr = [1.2,-6,8];
 // const res = arr.map(Math.round);
 // var res = arr.reduce(abc);
 // var res = arr.reduceRight(abc);
@@ -42,4 +42,4 @@ const arr = [1.2,-6,8];
 // var x =  Array.isArray(arr)
 // var x = typeof(arr);
 // arr.splice(1,-2,45)
-document.write(arr);
+// document.write(arr);
