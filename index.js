@@ -31,3 +31,15 @@
 // }
 
 //
+const arr = [1.2,-6,8];
+// const res = arr.map(Math.round);
+// var res = arr.reduce(abc);
+// var res = arr.reduceRight(abc);
+// function abc(a,b){
+//     return a-b;
+// }
+// document.write(res);
+// var x =  Array.isArray(arr)
+// var x = typeof(arr);
+// arr.splice(1,-2,45)
+document.write(arr);
