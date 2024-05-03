@@ -41,21 +41,38 @@
 //   res.end('<b>Hello World!</b>'+'hello');
 // }).listen(8080);
 
-// var http = require('http');
-// var fs = require('fs');
+/*var http = require('http');
+var fs = require('fs');
 
-// http.createServer(function(req, res) {
-//     fs.readFile('txt.html', function(err, data) {
+http.createServer(function(req, res) {
+    fs.readFile('txt.html', function(err, data) {
        
-//             res.writeHead(200, {'Content-Type': 'text/html'});
-            
+            res.writeHead(200, {'Content-Type': 'text/html'});
+                    
         
-        
-//         res.write(data);
-//         return res.end();
-//     });
-// }).listen(6000);
+        res.write(data);
+        return res.end();
+    });
+}).listen(6000);*/
 
 
 
-  
+// const http = require('http'); 
+// const fs = require('fs');
+
+// http.createServer(function (req, res) { 
+//    fs.readFile('txt.html', function(err, data) { 
+//       res.writeHead(200, {'Content-type': 'text/html'}); 
+//       res.write(data);           
+//       return res.end(); 
+//     }); 
+//  }).listen(8080);
+
+// var http = require('http');
+// var fs = require('fs')
+// http.createServer(function(res,req){
+//     fs.unlink('txt.html',function(err){
+//         if(err) throw err;
+//         console.log('file deleted');
+//     })
+// }).listen(4000);
