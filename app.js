@@ -1,5 +1,7 @@
 // const http = require('http');
 
+const Mail = require("nodemailer/lib/mailer");
+
 // const server = http.createServer((req, res) => {
 //   console.log('Request received');
 //   res.writeHead(200, {'Content-Type': 'text/html'});
@@ -109,3 +111,18 @@ http.createServer(function(req, res) {
 //    if(err)throw err;
 //    console.log('saved');
 // })
+// var url = require('url')
+// var adr = 'https://chat.openai.com/domain_migration?next=https%3A%2F%2Fchatgpt.com%2F';
+// var q = url.parse(adr,true);
+// console.log(q.pathname);
+// console.log(q.host);
+// console.log(q.search);
+
+// var http = require('http')
+// var fs = require('fs')
+// fs.mkdir('./image',function(err){
+//     if(err)throw err;
+//     console.log('folder created')
+// })
+
+

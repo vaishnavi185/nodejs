@@ -8,5 +8,10 @@
     "dev": "nodemon"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mailer": "^0.6.7",
+    "node": "^22.1.0",
+    "nodemailer": "^6.9.13"
+  }
 }
