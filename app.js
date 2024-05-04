@@ -76,3 +76,11 @@ http.createServer(function(req, res) {
 //         console.log('file deleted');
 //     })
 // }).listen(4000);
+
+// var http = require('http');
+// var fs = require('fs');
+// fs.rename('index.html','abc.html',function(err){
+//     if(err)throw err;
+//     console.log('renamed')
+// })
+
