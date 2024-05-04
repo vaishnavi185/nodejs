@@ -97,3 +97,15 @@ http.createServer(function(req, res) {
 //     if(err)throw err;
 //     console.log('appended')
 // })
+
+// var fs = require('fs')
+// var http = require('http')
+// fs.appendFile('mynew.txt','helllooo',function(err){
+//     if(err)throw err;
+//     console.log('add')
+// })
+// var fs = require('fs')
+// fs.open('mynew1.txt','w',function(err,file){
+//    if(err)throw err;
+//    console.log('saved');
+// })
