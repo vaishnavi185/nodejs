@@ -84,3 +84,16 @@ http.createServer(function(req, res) {
 //     console.log('renamed')
 // })
 
+// var fs = require('fs')
+// var http = require('http')
+// fs.writeFile('abc.txt','welcome',function(err){
+//     if(err)throw err;
+//     console.log('done');
+// })
+
+// var fs = require('fs')
+// var http = require('http')
+// fs.appendFile('abc.txt',"hello my name is tanya",function(err){
+//     if(err)throw err;
+//     console.log('appended')
+// })
