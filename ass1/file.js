@@ -1,27 +1,28 @@
-var http = require('http');
-var formidable = require('formidable');
-var fs = require('fs');
+const http = require('http');
+const formidable = require('formidable');
+const fs = require('fs');
 
-http.createServer(function (req, res) {
-  if (req.url == '/fileupload') {
-    var form = new formidable.IncomingForm();
-    form.parse(req, function (err, fields, files) {
-      var oldpath = files.filetoupload.path;
-      var newpath = '/upload/' + files.filetoupload.name;
-      fs.rename(oldpath, newpath, function (err) {
-        if (err) throw err;
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write('File uploaded and moved!');
+http.createServer(function(req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    if (req.url === '/upload') {
+      let form = new formidable.IncomingForm();
+      form.parse(req);
+      form.on('fileBegin',function(name,file){
+        file.filepath = __dirname + '/upload/'+ file.originalFilename;
+     
+      })
+      form.on('file',function(){
+        res.write('file upload')
         res.end();
-      });
-    });
-  } else {
-    res.writeHead(404, {'Content-Type': 'text/html'});
-    res.write('<h1>404 Not Found</h1>');
-    res.end();
-  }
+        console.log('uploaded')
+      })
 
-  console.log("Request URL:", req.url); // Move the console.log inside the createServer callback
-}).listen(8080);
+    } else {
+        let html = fs.readFileSync('a.html');
+        res.write(html);
+        res.end();
+    }
+   
+}).listen(8000);
 
-console.log("Server running at http://localhost:8080/");
+console.log("Server is running on port 8000");
