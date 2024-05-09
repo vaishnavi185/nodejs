@@ -27,3 +27,19 @@
 //     res.send('POST request to the homepage')
 //   })
 // app.listen(3000);
+
+
+// var express = require('express');
+// var app = express();
+
+// // Define a route with a parameter 'id' restricted to 5-digit numbers
+// app.get('/thing/:id([0-9]{5})', function(req, res) {
+//     res.send('id: ' + req.params.id);
+// });
+
+// // Change the port number to 5000
+// const PORT = 5000;
+// app.listen(PORT, function() {
+//     console.log('Server is running on port ' + PORT);
+// });
+
