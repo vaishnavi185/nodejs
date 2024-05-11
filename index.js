@@ -1,17 +1,45 @@
-var express = require('express');
-var app = express();
-const path = require('path')
-app.use(express.static(path.join(__dirname ,'Public')))
-app.get('/hello',function(req,res){
-    res.send('hello world')
-});
-app.get('/about', function(req,res) {
-    res.sendFile(path.join(__dirname ,'index.html'))
+// create pyramid
+// for(a=1;a<=10;a++){
+//     for(b=1;b<=a;b++){
+//         document.write("*");
+        
+//     }
+//     document.write('<br>');
+// }
 
-})
-app.get('/contact', function(req , res){
-    res.json({'tanya':90})
-})
-app.listen(2008);
-console.log('http://localhost:2008}')
+//create pyramid of numbers
 
+// for(a=1;a<=5;a++){
+//     for(b=1;b<=a;b++){
+//         document.write(+b);
+//     }
+//     document.write('<br>');
+// }
+
+//create triangle
+// for(i=0;i<=5;i++){
+    
+//    for(j=0;j<5-i;j++){
+//        document.write("&nbsp");
+//    }
+
+// for(k=0;k<=(2*i+1);k++){
+
+//       document.write("*")
+// }
+//   document.write("<br>")
+// }
+
+//
+// const arr = [1.2,-6,8];
+// const res = arr.map(Math.round);
+// var res = arr.reduce(abc);
+// var res = arr.reduceRight(abc);
+// function abc(a,b){
+//     return a-b;
+// }
+// document.write(res);
+// var x =  Array.isArray(arr)
+// var x = typeof(arr);
+// arr.splice(1,-2,45)
+// document.write(arr);
