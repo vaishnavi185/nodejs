@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm">
+        Enter name:<input type="text" name="n1">
+        Enter password:<input type="password" name="n2">
+        Confirm password:<input type="password" name="n3">
+        enter email: <input type="email" name="n4">
+        <input type="submit" name="n0" onclick="return valid()">
+        <input type="reset">
+    </form>
+</body>
+<script>
+   function valid() {
+    var x = document.myForm.n1.value;
+    var y = document.myForm.n2.value;
+    var z = document.myForm.n3.value;
+    var k = document.myForm.n4.value;
+    var atposition=k.indexOf("@");  
+var dotposition=k.lastIndexOf(".");  
+    if (x == '') {
+        alert("Name field is empty");
+        return false;
+    }
+    if (y == '' || y.length < 6) {
+        alert("Password field is empty or too short");
+        return false;
+    }
+    if (z == '') {
+        alert("Confirm password field is empty");
+        return false;
+    }
+    if(y!= z){
+        alert("Password and confirm password do not match");
+        return false;
+    }
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+
+
+    return true;
+}
+</script>
+</html>
