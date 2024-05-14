@@ -10,13 +10,25 @@
     
 </body>
 <script>
-    let display= async()=>{
-        let data=await"weelcome"
-        console.log(data)    
+    // let display= async()=>{
+    //     let data=await"weelcome"
+    //     console.log(data)    
+    // }
+    //  console.log(12313131);
+    //  display();
+    //  console.log("helloworls ")
+    function showData(name, amount){
+        alert('Hello ' + name + ', you entered: ' + amount);
     }
-     console.log(12313131);
-     display();
-     console.log("helloworls ")
+
+    function getData(callback){
+        var name = prompt('Enter your name:');
+        var amount = prompt('Enter amount:');
+        callback(name, amount);
+    }
+
+    // Call getData function with showData as a callback
+    getData(showData);
 </script>
 </html>
 
