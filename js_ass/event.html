@@ -14,7 +14,7 @@
         <form class="form-vertical">
             <div class="form-group">
                 <label for="'name">Enter name</label>
-                <input class="form-control" placeholder="name" type="text">
+                <input class="form-control" placeholder="name" type="text" onfocus="ab()">
             </div>
             <div class="form-group">
                 <label for="email">Enter email</label>
@@ -43,7 +43,12 @@ if(x!=''){
 }else{
     alert('empty form')
 }
-        
+       
+
+}
+function ab(){
+    var z = document.getElementsByClassName('form-controle')
+    z.style.background ='pink'
 }
 </script>
 
