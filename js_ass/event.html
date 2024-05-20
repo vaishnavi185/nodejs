@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Enter email</label>
-                <input class="form-control" placeholder="email" type="email">
+                <input class="form-control" placeholder="email" type="email" onblur="ab()">
             </div>
             <div class="form-group">
                 <label for="'phone number">Enter <abbr title="phone number">phn</label>
@@ -47,8 +47,9 @@ if(x!=''){
 
 }
 function ab(){
-    var z = document.getElementsByClassName('form-controle')
-    z.style.background ='pink'
+    var z = document.getElementsByClassName('form-control')
+    z[0].style.background ='pink'
+    z[1].style.background='yellow'
 }
 </script>
 
