@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About Me</h1>
+    <form>
+        enter your name: <input type="text" id="val1" >
+        enter your class:<input type="number" id="val2">
+        enter your hobbies:<input type="text" id="para">
+    </form>
+    <button id="btn">click here to print all details</button>
+    
+</body>
+<script>
+    let b = document.getElementById('btn');
+
+    b.addEventListener('click', function() {
+        let val1 = document.getElementById('val1').value;
+        let val2 = document.getElementById('val2').value;
+        let val3 = document.getElementById('para').value;
+
+        let details = "Name: " + val1 + "<br>" +
+                      "Class: " + val2 + "<br>" +
+                      "Hobbies: " + val3 + "<br>";
+
+        document.write(details);
+    });
+</script>
+</html>

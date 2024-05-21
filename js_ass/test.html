@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+<p id="para"></p>
+    </div>
+</body>
+<script>
+    var x = document.getElementById('para')
+    x.innerHTML='helllo'
+    var y = prompt('enter your age')
+    // if(y<18){
+    //     alert('age is less then 18')
+    // }
+    // else{
+    //     alert('age is more tahn 18')
+    // }
+   const arr = [23,'heklo',90,'kilo']
+   var d= document.getElementById('demo')
+   d.innerHTML=arr;
+   arr.pop()
+   arr.shift()
+   arr.unshift('hjkkk')
+   document.write(arr)
+   const arr2= [2.3,8.9,9]
+   const r = arr2.map(Math.round)
+   document.write(r)
+   arr.splice(1,0,"apple",'lemon')
+   document.write(arr)
+</script>
+</html>
