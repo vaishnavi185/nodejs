@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <label for="country">Select Country:</label>
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+            </select>
+            <br><br>
+<label for="phone">Phone:</label><br>
+<table>
+  <tr>
+    <td><input type="text" value="+91" disabled></td>
+    <!-- <td>&nbsp;</td> -->
+    <td><input type="tel" id="phone" name="phone" placeholder="Enter phone number"></td>
+  </tr>
+</table>
+
+
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address"></textarea>
+<br>
+<br><label for="address">Language</label>
+<br>
+            <input type="checkbox" id="term">Hindi
+             <input type="checkbox" id="term">English
+              <input type="checkbox" id="term">Punjabi
+
+              <br><br>
+              <table>
+                <th>qaulification</th>
+                <th>year</th>
+                <th>percentage</th>
+
+                <tr>
+                    <td><input type="text" placeholder="Enter qualification"></td>
+                    <td><input type="text" placeholder="Enter year"></td>
+                    <td><input type="text" placeholder="Enter percentage"></td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
