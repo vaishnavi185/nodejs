@@ -1,4 +1,7 @@
-h2{
+@import url('a.css');
+
+
+h3{
     font-family: 'Times New Roman', Times, serif;
     color: brown;
 }
