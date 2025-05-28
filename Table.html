@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<title>Grid Demo</title>
+<style>
+    .wrapper {
+  display: grid;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  border: 2px solid #f76707;
+  border-radius: 5px;
+  background-color: #fff4e6;
+}
+.wrapper > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+}
+</style>
 </head>
 <body>
-    <table border="1" >
-
-        <tr>
-            <th bgcolor="blue">EMPLOYEE NAME</th>
-            <th  bgcolor="blue">SALARY</th>
-            <th  bgcolor="blue">Designation</th>
-        </tr>
-        <tr>
-            <td>Lathika</td>
-            <td>23785</td>
-            <td>software eng.</td>
-        </tr>
-         <tr>
-            <td>Sonia</td>
-            <td>2375</td>
-            <td>team lead</td>
-        </tr>
-        
-    </table>
+   <div class="wrapper">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>Five</div>
+</div>
 </body>
 </html>
