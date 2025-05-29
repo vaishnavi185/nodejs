@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
 </head>
 <body>
   <script>
-    class car{
-      constructor(name ,model){
-        this.name=name;
-        this.model=model;
+    class Car {
+      constructor(name, model) {
+        this.name = name;
+        this.model = model;
       }
-      present(){
-        return "i have "+this.name
+
+      present() {
+        return "I have a " + this.name + ". ";
       }
     }
-    const car1=new car("bmw","x3")
-    document.write(car1.name+" "+car1.model)
-    document.write(car1.present())
+
+    class Rank extends Car {
+      constructor(name, model, rank) {
+        super(name, model); // Correct usage
+        this.rank = rank;
+      }
+
+      past() {
+        return this.present() + "This is my rank: " + this.rank;
+      }
+    }
+
+    const car1 = new Car("BMW", "X3");
+    const car2 = new Rank("Audi", "A3", "R1");
+
+    document.write(car1.name + " " + car1.model + "<br>");
+    document.write(car1.present() + "<br>");
+    document.write(car2.past());
   </script>
-  
 </body>
 </html>
