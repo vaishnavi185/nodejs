@@ -7,8 +7,7 @@ const tapp="hello"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {tapp}
-    {/* <App /> */}
+    <App></App>
   </React.StrictMode>
 );
 
