@@ -12,9 +12,13 @@
         this.name=name;
         this.model=model;
       }
+      present(){
+        return "i have "+this.name
+      }
     }
     const car1=new car("bmw","x3")
     document.write(car1.name+" "+car1.model)
+    document.write(car1.present())
   </script>
   
 </body>
