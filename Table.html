@@ -1,43 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
-</head>
+<html>
 <body>
-  <script>
-    class Car {
-      constructor(name, model) {
-        this.name = name;
-        this.model = model;
-      }
-
-      present() {
-        return "I have a " + this.name + ". ";
-      }
-    }
-
-    class Rank extends Car {
-      constructor(name, model, rank) {
-        super(name, model); // Correct usage
-        this.rank = rank;
-      }
-
-      past() {
-        return this.present() + "This is my rank: " + this.rank;
-      }
-    }
-
-    var arr=["h","i","j","k"]
-
-    const car1 = new Car("BMW", "X3");
-    const car2 = new Rank("Audi", "A3", "R1");
-
-    document.write(car1.name + " " + car1.model + "<br>");
-    document.write(car1.present() + "<br>");
-    document.write(car2.past());
-    document.write("array:"+arr[0])
-  </script>
+<h1 id="demo"></h1>
+<script>
+function renderApp() {
+  document.getElementById("demo").innerHTML = "Welcome!";
+}
+function renderLogin() {
+  document.getElementById("demo").innerHTML = "Please log in";
+}
+let authenticated = false;
+authenticated ? renderApp() : renderLogin();
+</script>
+<p>Try changing the "authenticated" variable to false, and run the code to see what happens.</p>
 </body>
 </html>
