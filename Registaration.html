@@ -8,14 +8,14 @@
 <body>
   <P id="demo"> hh</P>
   <script>
-    fun=()=>{
-      let a=10
-      let b=20
+    fun=(a,b)=>{
+     this.a=a
+     this.b=b
       let c=a+b
     return c;
     }
 
-    document.getElementById("demo").innerHTML=fun();
+    document.getElementById("demo").innerHTML=fun(20,9);
   </script>
   
 </body>
