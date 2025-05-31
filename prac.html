@@ -1,43 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<title>JavaScript Assigning Multiple Event Listeners on a Single Event</title>
 </head>
-<body onload="window.alert('Page loaded!')">
-    <script>
-        function SayHi(){
-            return  alert("hello")
-        }
-          function highlightInput(elm){
-            elm.style.background = "yellow";
-        }  
-        function resetInput(elm){
-            elm.style.background="white"
-        } 
-    </script>
-
-    <button oncontextmenu="alert('right click'); return false;"
-            onclick="SayHi()"
-            onmouseover="console.log('mouse over')"
-            onmouseout="console.log('mouse out')">
-        click me
-    </button>
-    <button onmouseover="alert('mouse over')"
-            onmouseout="console.log('mouse out')"
-            onclick="alert('hello')">
-        click me too
-
-    </button>
-    <input type="text" onkeydown="alert('You have pressed a key inside text input!')" onfocus="highlightInput(this)" onblur="resetInput(this)" placeholder="Type here...">
-<hr>
-<textarea cols="30" onkeydown="alert('You have pressed a key inside textarea!')"></textarea>
-	<p><strong>Note:</strong> Try to enter some text inside input box and textarea.</p>
-
-    <select onchange="alert('You have selected: ' + this.value)">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+<body>
+<button id="myBtn">Click Me</button>
+<script>
+	// Defining custom functions
+	function firstFunction(){
+	   alert("The first function executed successfully!");
+	}
+	function secondFunction(){
+	  alert("The second function executed successfully");
+	}
+	// Selecting button element
+	var btn=document.getElementById("myBtn");
+	// Assigning event listeners to the button
+  	btn.addEventListener("click",firstFunction);
+	btn.addEventListener("click",secondFunction);
+</script>
 </body>
 </html>
