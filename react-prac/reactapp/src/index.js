@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import Des from './Des';
 import reportWebVitals from './reportWebVitals';
+
+function Car(props){
+  return (
+    <h1>hi i am {props.color}</h1>
+  )
+}
 const tapp="hello"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App></App> */}
     <Des></Des>
+    <Car color="red"></Car>
   </React.StrictMode>
 );
 
