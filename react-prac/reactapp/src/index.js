@@ -10,13 +10,22 @@ function Car(props){
     <h1>hi i am {props.color}</h1>
   )
 }
+function Grage(){
+  return(
+    <>
+    <h1>who is there</h1>
+    <Car color="red"></Car>
+    </>
+  )
+}
 const tapp="hello"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App></App> */}
     <Des></Des>
-    <Car color="red"></Car>
+    {/* <Car color="red"></Car>  */}
+    <Grage></Grage>
   </React.StrictMode>
 );
 
