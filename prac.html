@@ -12,7 +12,10 @@
         }
     </script>
 
-    <button onclick="SayHi()">
+    <button oncontextmenu="alert('right click'); return false;"
+            onclick="SayHi()"
+            onmouseover="console.log('mouse over')"
+            onmouseout="console.log('mouse out')">
         click me
     </button>
 </body>
