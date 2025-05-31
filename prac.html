@@ -12,7 +12,10 @@
         }
           function highlightInput(elm){
             elm.style.background = "yellow";
-        }   
+        }  
+        function resetInput(elm){
+            elm.style.background="white"
+        } 
     </script>
 
     <button oncontextmenu="alert('right click'); return false;"
@@ -27,7 +30,7 @@
         click me too
 
     </button>
-    <input type="text" onkeydown="alert('You have pressed a key inside text input!')" onfocus="highlightInput(this)">
+    <input type="text" onkeydown="alert('You have pressed a key inside text input!')" onfocus="highlightInput(this)" onblur="resetInput(this)" placeholder="Type here...">
 <hr>
 <textarea cols="30" onkeydown="alert('You have pressed a key inside textarea!')"></textarea>
 	<p><strong>Note:</strong> Try to enter some text inside input box and textarea.</p>
