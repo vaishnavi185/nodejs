@@ -7,7 +7,7 @@ void sub(int a,int b){
 }
 }
 
-public class Calci extends Addition{
+ class Calci extends Addition{
    void Call(){
      System.out.println("This is a calculator class that extends Addition class");
 
