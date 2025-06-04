@@ -5,6 +5,10 @@
 <script>
 $(document).ready(function(){
   	$("button").click(function(){
+        $('#n').animate({opacity: 0.25}, 500)
+                  .animate({fontSize: '24px'}, 500)
+                  .animate({fontSize: '16px'}, 500)
+                  .animate({opacity: 1}, 500);
    	alert("button clicked");
  		 });
 });
@@ -12,7 +16,7 @@ $(document).ready(function(){
 </head>
 <body>
 
-<p>If you click on me, I will disappear.</p>
+<p id="n">If you click on me, I will disappear.</p>
 <p>Click me away!</p>
 <p>Click me too!</p>
 
