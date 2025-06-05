@@ -9,6 +9,9 @@ class Pro{
         Pro p = new Pro();
         p.GetN();
         System.out.print(+m);
+
+        int a= 100;
+        System.out.println(+a);
         
     }
 }
