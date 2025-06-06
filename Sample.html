@@ -3,13 +3,31 @@
 <head>
 <script src="jquery.min.js"></script>
 <script>
-function Sort(s){
-   return s.split("").sort().join("");
+// function Sort(s){
+//    return s.split("").sort().join("");
    
+// }
+
+// let s="webstrm";
+// console.log(Sort(s));
+
+function CountVowels(str){
+      if(!str || str.length==0){
+            return 0;
+      }
+      let c=0;
+      for(let i=0;i<str.length;i++){
+            if(str[i].toLowerCase()=='a'|| str[i].toLowerCase()=="e" || str[i].toLowerCase()=='i'|| str[i].toLowerCase()=="o" || str[i].toLowerCase()=="u"){
+                  c++;
+            }
+
+      }
+      return c;
 }
 
-let s="webstrm";
-console.log(Sort(s));
+let str="i am using red color pencil";
+console.log(CountVowels(str));
+
 </script>
 </head>
 <body>
