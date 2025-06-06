@@ -3,15 +3,13 @@
 <head>
 <script src="jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  	$("button").click(function(){
-        $('#n').animate({opacity: 0.25}, 500)
-                  .animate({fontSize: '24px'}, 500)
-                  .animate({fontSize: '16px'}, 500)
-                  .animate({opacity: 1}, 500);
-   	alert("button clicked");
- 		 });
-});
+function Sort(s){
+   return s.split("").sort().join("");
+   
+}
+
+let s="webstrm";
+console.log(Sort(s));
 </script>
 </head>
 <body>
