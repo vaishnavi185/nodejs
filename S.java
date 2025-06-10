@@ -16,10 +16,12 @@ class S{
         sb.insert(5, " ");
 
         sb.reverse() ;
+    
 
         String str = sb.toString();
         System.out.println(str);
+        System.out.println(sb.capacity());
+        System.out.print(sb.charAt(8));
 
-        
     }
 }
