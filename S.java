@@ -15,7 +15,11 @@ class S{
         sb.append("world");
         sb.insert(5, " ");
 
+        sb.reverse() ;
+
         String str = sb.toString();
         System.out.println(str);
+
+        
     }
 }
